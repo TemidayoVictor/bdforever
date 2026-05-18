@@ -79,22 +79,23 @@ export default function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="flex justify-center items-center gap-4 sm:gap-8 max-w-xl mx-auto py-4"
+                            className="flex justify-center items-center gap-2.5 sm:gap-8 max-w-xl mx-auto py-4"
                         >
                             {Object.entries(timeLeft).map(([unit, value], idx) => (
                                 <div key={unit} className="flex items-center">
                                     <div className="text-center group">
-                                        <div className="text-3xl sm:text-4xl font-serif text-gold font-light tracking-sm">
+                                        <div className="text-2xl sm:text-4xl font-serif text-gold font-light tracking-sm">
                                             {String(value).padStart(2, "0")}
                                         </div>
-                                        <div className="text-[10px] tracking-[0.2em] text-chocolate/50 uppercase font-medium mt-1">
+                                        <div className="text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] text-chocolate/50 uppercase font-medium mt-1">
                                             {unit}
                                         </div>
                                     </div>
+
                                     {/* Subtle vertical separator dot between time elements */}
                                     {idx < Object.keys(timeLeft).length - 1 && (
-                                        <span className="text-gold/20 text-xs font-light ml-4 sm:ml-8 self-center -translate-y-2">
-                      •
+                                        <span className="text-gold/20 text-xs font-light ml-2.5 sm:ml-8 self-center -translate-y-1 sm:-translate-y-2 select-none">
+                        •
                     </span>
                                     )}
                                 </div>
