@@ -48,12 +48,12 @@ export default function Navbar() {
                         : "py-8 px-6 md:px-12"
                 }`}
             >
-                {/* Dynamic Wrapper: Transmutes smoothly from flat layout to a floating glass frame */}
+                {/* Dynamic Wrapper: Transmutes smoothly from flat layout to a solid high-contrast light frame */}
                 <div
                     className={`max-w-7xl mx-auto px-6 py-3.5 rounded-full flex justify-between items-center transition-all duration-500 ${
                         scrolled
-                            ? "bg-white/80 backdrop-blur-md shadow-xs border border-gold/15"
-                            : "bg-transparent border-border/0"
+                            ? "bg-[#fdfbf7] shadow-md border border-gold/20"
+                            : "bg-transparent border-transparent"
                     }`}
                 >
                     {/* LUXURY INTERLOCKING LOGO MARK */}
@@ -61,15 +61,17 @@ export default function Navbar() {
                         onClick={() => scrollToSection("Home")}
                         className="flex items-center gap-1.5 cursor-pointer group select-none"
                     >
-            <span className="font-serif text-2xl text-chocolate font-light tracking-tighter group-hover:text-gold transition-colors duration-300">
-              T
-            </span>
-                        <span className="font-sans text-[11px] uppercase tracking-widest text-gold/50 font-light mt-1">
-              ×
-            </span>
-                        <span className="font-serif text-2xl text-chocolate font-light tracking-tighter group-hover:text-gold transition-colors duration-300">
-              O
-            </span>
+                        {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
+                        <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
+                          T
+                        </span>
+                        <span className="font-sans text-[11px] uppercase tracking-widest text-gold/60 font-light mt-1">
+                          ×
+                        </span>
+                        {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
+                        <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
+                          O
+                        </span>
                     </div>
 
                     {/* DESKTOP NAV ITEMS */}
@@ -93,64 +95,65 @@ export default function Navbar() {
                         className="md:hidden relative w-6 h-5 flex flex-col justify-between items-end group focus:outline-none z-50"
                         aria-label="Toggle Navigation Menu"
                     >
-            <span
-                className={`h-[1px] bg-chocolate transition-all duration-300 ease-out ${
-                    mobileMenuOpen ? "w-6 rotate-45 translate-y-2 !bg-white" : "w-6"
-                }`}
-            />
+                        {/* Removed !bg-white override configurations -> Lines retain original chocolate values */}
                         <span
-                            className={`h-[1px] bg-chocolate transition-all duration-200 ease-out ${
+                            className={`h-[1.5px] bg-chocolate transition-all duration-300 ease-out ${
+                                mobileMenuOpen ? "w-6 rotate-45 translate-y-2" : "w-6"
+                            }`}
+                        />
+                        <span
+                            className={`h-[1.5px] bg-chocolate transition-all duration-200 ease-out ${
                                 mobileMenuOpen ? "w-0 opacity-0" : "w-4 group-hover:w-6"
                             }`}
                         />
                         <span
-                            className={`h-[1px] bg-chocolate transition-all duration-300 ease-out ${
-                                mobileMenuOpen ? "w-6 -rotate-45 -translate-y-2 !bg-white" : "w-5 group-hover:w-6"
+                            className={`h-[1.5px] bg-chocolate transition-all duration-300 ease-out ${
+                                mobileMenuOpen ? "w-6 -rotate-45 -translate-y-2" : "w-5 group-hover:w-6"
                             }`}
                         />
                     </button>
                 </div>
             </motion.nav>
 
-            {/* ================= FULLSCREEN MOBILE OVERLAY LOOKBOOK ================= */}
+            {/* ================= HIGH-CONTRAST FULLSCREEN MOBILE OVERLAY ================= */}
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.4 }}
-                        className="fixed inset-0 bg-chocolate/98 backdrop-blur-lg z-40 md:hidden flex flex-col justify-center items-center"
+                        transition={{ duration: 0.35 }}
+                        className="fixed inset-0 bg-[#052316] z-40 md:hidden flex flex-col justify-center items-center"
                     >
-                        {/* Soft decorative background monogram in fullscreen mode */}
+                        {/* Soft decorative background monogram in background */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none select-none">
-                            <span className="font-serif text-[40vw] text-gold font-light">T</span>
+                            <span className="font-serif text-[50vw] text-gold font-light">T</span>
                         </div>
 
                         <div className="flex flex-col items-center gap-8 relative z-10 w-full px-6">
                             {navItems.map((item, idx) => (
                                 <motion.button
                                     key={item}
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 15 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: 20 }}
-                                    transition={{ delay: idx * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                                    exit={{ opacity: 0, y: 15 }}
+                                    transition={{ delay: idx * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                                     onClick={() => scrollToSection(item)}
-                                    className="text-white hover:text-gold font-serif text-3xl font-light tracking-wide transition-colors py-2 block w-full text-center group relative"
+                                    className="text-white/90 hover:text-gold active:text-gold font-serif text-3xl font-light tracking-wide transition-colors py-2 block w-full text-center group relative focus:outline-none"
                                 >
-                  <span className="inline-block relative">
-                    {item}
-                      <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-[1px] bg-gold/40 scale-x-0 group-hover:scale-x-100 transition-transform" />
-                  </span>
+                                    <span className="inline-block relative">
+                                        {item}
+                                        <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-5 h-[1px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                                    </span>
                                 </motion.button>
                             ))}
 
                             <div className="w-12 h-[1px] bg-gold/20 my-4" />
 
                             {/* Micro Footer Inside Mobile Drawer */}
-                            <span className="text-[10px] tracking-[0.3em] uppercase text-gold/60 font-medium">
-                Temidayo & Olubunmi
-              </span>
+                            <span className="text-[10px] tracking-[0.3em] uppercase text-gold/80 font-medium">
+                                Temidayo & Olubunmi
+                            </span>
                         </div>
                     </motion.div>
                 )}
