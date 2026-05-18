@@ -4,20 +4,20 @@ import { useInView } from "react-intersection-observer";
 
 const stories = [
     {
-        name: "Temidayo Victor",
-        role: "Groom",
-        content:
-            "I first saw Bunmi at a church event, and something about her grace stood out. We became friends, then prayer partners, and somewhere along the line, I knew she was the one God had prepared for me. Her faith, her strength, and her beautiful smile captured my heart completely.",
-        image: "/groom.jpg",
-        delay: 0,
-    },
-    {
         name: "Olubunmi Helen",
         role: "Bride",
         content:
             "Temidayo has always been my safe place. From the very first conversation, I knew he was different — intentional, kind, and deeply devoted to God. He challenges me to grow, loves me unconditionally, and makes every day feel like a gift. I can't wait to be his wife.",
         image: "/bride.jpg",
         delay: 0.2,
+    },
+    {
+        name: "Temidayo Victor",
+        role: "Groom",
+        content:
+            "I first saw Bunmi at a church event, and something about her grace stood out. We became friends, then prayer partners, and somewhere along the line, I knew she was the one God had prepared for me. Her faith, her strength, and her beautiful smile captured my heart completely.",
+        image: "/groom.jpg",
+        delay: 0,
     },
 ];
 
