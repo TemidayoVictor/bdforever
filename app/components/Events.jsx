@@ -125,48 +125,72 @@ export default function Events() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.2, duration: 0.6 }}
-                    className="max-w-4xl mx-auto mb-32"
+                    transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    className="max-w-4xl mx-auto mb-32 px-4 sm:px-6"
                 >
-                    <h3 className="text-3xl font-serif text-center mb-16 tracking-wide text-chocolate">
-                        Event Timeline
-                    </h3>
+                    {/* ================= TIMELINE HEADER ================= */}
+                    <div className="text-center mb-20">
+                        <h3 className="text-2xl md:text-3xl font-serif tracking-wide text-chocolate font-light">
+                            The Day's Itinerary
+                        </h3>
+                        <div className="w-8 h-[1px] bg-gold/30 mx-auto mt-3" />
+                    </div>
 
-                    <div className="relative border-l-2 border-gold/30 md:border-l-0 md:before:absolute md:before:left-1/2 md:before:top-0 md:before:h-full md:before:w-0.5 md:before:bg-gold/30 md:before:-translate-x-1/2 ml-4 md:ml-0">
+                    {/* ================= THE TIMELINE CONTAINER ================= */}
+                    <div className="relative border-l border-gold/20 md:border-l-0 md:before:absolute md:before:left-1/2 md:before:top-0 md:before:h-full md:before:w-[1px] md:before:bg-gradient-to-b md:before:from-gold/10 md:before:via-gold/30 md:before:to-gold/10 md:before:-translate-x-1/2 ml-4 md:ml-0">
+
                         {timeline.map((item, idx) => {
                             const isEven = idx % 2 === 0;
 
                             return (
                                 <motion.div
                                     key={idx}
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 25 }}
                                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                                    transition={{ delay: 0.2 + idx * 0.1, duration: 0.5 }}
-                                    className={`relative mb-12 last:mb-0 md:w-1/2 pl-8 md:pl-0 ${
-                                        isEven ? "md:ml-auto md:pl-16" : "md:mr-auto md:pr-16 md:text-right"
+                                    transition={{ delay: 0.1 + idx * 0.08, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                                    className={`relative mb-16 last:mb-0 md:w-1/2 pl-8 md:pl-0 flex ${
+                                        isEven ? "md:ml-auto md:pl-16 justify-start" : "md:mr-auto md:pr-16 justify-start md:justify-end"
                                     }`}
                                 >
-                                    {/* Timeline Point Marker */}
-                                    <div className={`absolute top-1.5 left-0 w-4 h-4 rounded-full border-2 border-gold bg-white -translate-x-1/2 z-10 md:left-auto ${
-                                        isEven ? "md:-left-2" : "md:-right-2"
-                                    }`}>
-                                        <div className="w-1.5 h-1.5 bg-gold rounded-full m-auto mt-[3px]"></div>
+                                    {/*
+            TIMELINE ELEGANT NODE
+            Replaced the double div with a crisp ring + pulse core setup
+          */}
+                                    <div
+                                        className={`absolute top-2 left-0 w-3 h-3 rounded-full border border-gold bg-white -translate-x-1/2 z-10 md:left-auto transition-transform duration-300 group-hover:scale-125 ${
+                                            isEven ? "md:-left-[6px]" : "md:-right-[6px]"
+                                        }`}
+                                    >
+                                        <span className="absolute inset-0.5 rounded-full bg-gold/80 animate-pulse" />
                                     </div>
 
-                                    {/* Elegant Text Card */}
-                                    <div className="p-6 rounded-2xl bg-cream/20 hover:bg-cream/50 transition-all duration-300 shadow-xs border border-gold/10 backdrop-blur-xs group">
-                    <span className="block text-xs font-semibold tracking-widest text-gold uppercase mb-1">
-                      {item.time}
-                    </span>
-                                        <h4 className="text-lg font-serif text-chocolate font-medium">
-                                            {item.event}
-                                        </h4>
-                                        {item.description && (
-                                            <p className="mt-2 text-xs text-chocolate/70 leading-relaxed">
-                                                {item.description}
-                                            </p>
-                                        )}
+                                    {/*
+            EVENT INTERIOR CONTAINER
+            Changed to editorial text-left alignment on both sides for premium readability
+          */}
+                                    <div className="w-full max-w-md text-left group">
+                                        <div className="p-6 rounded-2xl bg-transparent hover:bg-cream/30 border border-transparent hover:border-gold/10 shadow-none hover:shadow-2xs transition-all duration-400 group">
+
+                                            {/* Event Time Stamp */}
+                                            <span className="block text-[10px] font-semibold tracking-[0.25em] text-gold uppercase mb-2 transition-transform duration-300 group-hover:translate-x-0.5">
+                {item.time}
+              </span>
+
+                                            {/* Event Title */}
+                                            <h4 className="text-lg font-serif text-chocolate font-light tracking-wide group-hover:text-gold transition-colors duration-300">
+                                                {item.event}
+                                            </h4>
+
+                                            {/* Optional Description */}
+                                            {item.description && (
+                                                <p className="mt-2.5 text-xs text-chocolate/60 font-light leading-relaxed tracking-wide">
+                                                    {item.description}
+                                                </p>
+                                            )}
+
+                                        </div>
                                     </div>
+
                                 </motion.div>
                             );
                         })}

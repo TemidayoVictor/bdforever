@@ -53,45 +53,61 @@ export default function Rsvp() {
                         <div className="md:col-span-5 flex justify-center">
                             <motion.div
                                 whileHover={{ scale: 1.03, rotate: -1 }}
-                                className="w-full max-w-[280px] aspect-[3/4] bg-gradient-to-br from-chocolate to-[#23150d] rounded-2xl p-6 text-white shadow-2xl border-2 border-gold/40 flex flex-col justify-between relative overflow-hidden group"
+                                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                className="w-full max-w-[280px] aspect-[3/4] bg-gradient-to-br from-[#063321] via-[#0b4630] to-[#042417] rounded-2xl p-6 text-white shadow-2xl border border-gold/40 flex flex-col justify-between relative overflow-hidden group"
                             >
-                                {/* Decorative Background Elements */}
-                                <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-gold/10 blur-xl group-hover:bg-gold/20 transition-colors" />
-                                <div className="absolute -left-10 -bottom-10 w-32 h-32 rounded-full bg-cream/5 blur-xl" />
+                                {/* ================= EXTRA LUXURY INTERNAL PASS LINES ================= */}
+                                {/* A subtle vintage inner ticket frame border */}
+                                <div className="absolute inset-2.5 border border-gold/15 rounded-xl pointer-events-none" />
 
-                                {/* Pass Header */}
-                                <div className="border-b border-gold/30 pb-3 text-center">
-                  <span className="text-[10px] tracking-widest font-semibold uppercase text-gold">
-                    Official Guest Pass
-                  </span>
-                                    <h4 className="font-serif text-lg tracking-wide mt-1">
+                                {/* ================= DECORATIVE BACKGROUND GRADIENTS ================= */}
+                                {/* Rich emerald translucent glowing flare */}
+                                <div className="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-emerald-500/10 blur-xl group-hover:bg-emerald-400/20 transition-colors duration-500" />
+                                <div className="absolute -left-10 -bottom-10 w-32 h-32 rounded-full bg-gold/5 blur-xl" />
+
+                                {/* ================= PASS HEADER ================= */}
+                                <div className="border-b border-gold/25 pb-4 text-center relative z-10">
+          <span className="text-[9px] tracking-[0.25em] font-semibold uppercase text-gold/90 block">
+            Official Guest Pass
+          </span>
+                                    <h4 className="font-serif text-base tracking-wide mt-1.5 text-white/95">
                                         Temidayo & Olubunmi
                                     </h4>
                                 </div>
 
-                                {/* Pass Centerpiece */}
-                                <div className="text-center my-auto py-4">
-                                    <div className="text-gold text-xs tracking-widest uppercase mb-1">
+                                {/* ================= PASS CENTERPIECE ================= */}
+                                <div className="text-center my-auto py-4 relative z-10">
+                                    <div className="text-gold/80 text-[10px] tracking-[0.2em] uppercase mb-1">
                                         Admit One
                                     </div>
-                                    <div className="font-serif text-3xl text-gold/90 font-light">
+
+                                    {/* Main Tier Accent */}
+                                    <div className="font-serif text-4xl text-gold font-light tracking-wide my-1">
                                         VIP
                                     </div>
-                                    <div className="w-12 h-px bg-gold/40 mx-auto my-3" />
-                                    <p className="text-[11px] text-white/60 tracking-wider">
-                                        STRICTLY BY INVITATION
+
+                                    <div className="w-10 h-[1px] bg-gold/30 mx-auto my-3" />
+
+                                    <p className="text-[10px] text-white/70 tracking-[0.15em] font-medium uppercase">
+                                        Strictly By Invitation
                                     </p>
                                 </div>
 
-                                {/* Pass Footer / Mock Code */}
-                                <div className="pt-3 border-t border-gold/20 flex flex-col items-center gap-1.5">
-                                    <div className="w-full h-7 bg-white/10 rounded-sm flex items-center justify-center tracking-[0.4em] text-xs text-gold/80 font-mono">
-                                        ||||| | |||| ||
+                                {/* ================= PASS FOOTER / SECURITY CODE ================= */}
+                                <div className="pt-4 border-t border-gold/20 flex flex-col items-center gap-2 relative z-10">
+                                    {/* Minimalist modern ticket barcode asset representation */}
+                                    <div className="w-full h-8 bg-white/5 group-hover:bg-white/10 transition-colors rounded border border-white/5 flex items-center justify-center tracking-[0.4em] text-sm text-gold/70 font-mono select-none">
+                                        ||| | |||| | ||| ||
                                     </div>
-                                    <span className="text-[9px] text-white/40 tracking-wider font-mono">
-                    REF: BDFOREVER-2026
-                  </span>
+
+                                    <span className="text-[9px] text-white/40 tracking-[0.12em] font-mono uppercase">
+            REF: BDFOREVER-2026
+          </span>
                                 </div>
+
+                                {/* Vintage Ticket Side-Notch Accents (Simulates physical perforated ticket cut-outs) */}
+                                <div className="absolute top-1/2 -left-2 w-4 h-4 bg-background border-r border-gold/20 rounded-full -translate-y-1/2 z-20" />
+                                <div className="absolute top-1/2 -right-2 w-4 h-4 bg-background border-l border-gold/20 rounded-full -translate-y-1/2 z-20" />
                             </motion.div>
                         </div>
 

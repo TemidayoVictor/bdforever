@@ -6,6 +6,7 @@ import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Rsvp from "./components/RSVP";
 import Footer from "./components/Footer";
+import RegistrySection from "./components/RegistrySection";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Gallery />
             </div>
+            <RegistrySection />
             <Rsvp />
             <Footer />
         </main>
