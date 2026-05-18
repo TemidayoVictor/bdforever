@@ -71,7 +71,7 @@ export default function Rsvp() {
             Official Guest Pass
           </span>
                                     <h4 className="font-serif text-base tracking-wide mt-1.5 text-white/95">
-                                        Temidayo & Olubunmi
+                                        Olubunmi & Temidayo
                                     </h4>
                                 </div>
 
