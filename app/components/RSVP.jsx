@@ -67,12 +67,12 @@ export default function Rsvp() {
 
                                 {/* ================= PASS HEADER ================= */}
                                 <div className="border-b border-gold/25 pb-4 text-center relative z-10">
-          <span className="text-[9px] tracking-[0.25em] font-semibold uppercase text-gold/90 block">
-            Official Guest Pass
-          </span>
-                                    <h4 className="font-serif text-base tracking-wide mt-1.5 text-white/95">
-                                        Olubunmi & Temidayo
-                                    </h4>
+                                      <span className="text-[9px] tracking-[0.25em] font-semibold uppercase text-gold/90 block">
+                                        Official Guest Pass
+                                      </span>
+                                      <h4 className="font-serif text-base tracking-wide mt-1.5 text-white/95">
+                                            Olubunmi & Temidayo
+                                      </h4>
                                 </div>
 
                                 {/* ================= PASS CENTERPIECE ================= */}
@@ -101,8 +101,8 @@ export default function Rsvp() {
                                     </div>
 
                                     <span className="text-[9px] text-white/40 tracking-[0.12em] font-mono uppercase">
-            REF: BDFOREVER-2026
-          </span>
+                                        REF: BDFOREVER-2026
+                                    </span>
                                 </div>
 
                                 {/* Vintage Ticket Side-Notch Accents (Simulates physical perforated ticket cut-outs) */}
@@ -165,7 +165,7 @@ export default function Rsvp() {
 
                             {/* Host 1 */}
                             <a
-                                href="https://wa.me/234XXXXXXXXXX" // Replace with real WhatsApp links
+                                href="https://wa.me/08139943639"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-between p-4 bg-white hover:bg-cream rounded-xl border border-gold/20 group transition-all duration-300 shadow-sm hover:shadow-md"
@@ -175,13 +175,13 @@ export default function Rsvp() {
                                     <span className="font-serif text-chocolate font-medium">Temidayo</span>
                                 </div>
                                 <span className="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-colors text-sm">
-                  →
-                </span>
+                                  →
+                                </span>
                             </a>
 
                             {/* Host 2 */}
                             <a
-                                href="https://wa.me/234XXXXXXXXXX"
+                                href="https://wa.me/08161244256"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-between p-4 bg-white hover:bg-cream rounded-xl border border-gold/20 group transition-all duration-300 shadow-sm hover:shadow-md"
@@ -191,10 +191,9 @@ export default function Rsvp() {
                                     <span className="font-serif text-chocolate font-medium">Olubunmi</span>
                                 </div>
                                 <span className="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-colors text-sm">
-                  →
-                </span>
+                                  →
+                                </span>
                             </a>
-
                         </div>
                     </div>
 

@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
     title: 'Temidayo & Olubunmi - Wedding Website',
     description: 'Join us as we celebrate our love story on June 13, 2026 in Akure, Ondo State',
+    icons: {
+        icon: "/img5.jpg",
+    },
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {

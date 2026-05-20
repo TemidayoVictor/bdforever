@@ -7,8 +7,14 @@ const stories = [
         name: "Olubunmi Helen",
         role: "Bride",
         content:
-            "Temidayo has always been my safe place. From the very first conversation, I knew he was different — intentional, kind, and deeply devoted to God. He challenges me to grow, loves me unconditionally, and makes every day feel like a gift. I can't wait to be his wife.",
-        image: "/bride.jpg",
+            "Temidayo has always been my safe place, my home. \n" +
+            "\n" +
+            "From the very first conversation, I remember being introduced to him when I wanted to join his unit in church. He smiled at me and welcomed me with so much warmth. I just knew he was different—there was something about him. \n" +
+            "\n" +
+            "He’s a kind, intentional man, deeply devoted to God. He challenges me to grow, loves me unconditionally, and makes every day feel like a gift. He always told me, “Bunmi, you can do it. Everything will be fine. Don’t worry. God loves you. You’re special.” So many words that never made me doubt his commitment to me. \n" +
+            "\n" +
+            "I honestly can’t wait to be his wife. I look forward to the beautiful journey ahead with him.",
+        image: "/img16.jpeg",
         delay: 0.2,
     },
     {
@@ -16,7 +22,7 @@ const stories = [
         role: "Groom",
         content:
             "I first saw Bunmi at a church event, and something about her grace stood out. We became friends, then prayer partners, and somewhere along the line, I knew she was the one God had prepared for me. Her faith, her strength, and her beautiful smile captured my heart completely.",
-        image: "/groom.jpg",
+        image: "/img17.jpeg",
         delay: 0,
     },
 ];
@@ -48,9 +54,9 @@ export default function OurStory() {
                         transition={{ duration: 0.8 }}
                         className="space-y-3"
                     >
-            <span className="text-gold tracking-[0.3em] text-xs uppercase font-semibold block">
-              Chapter One
-            </span>
+                        <span className="text-gold tracking-[0.3em] text-xs uppercase font-semibold block">
+                          Chapter One
+                        </span>
                         <h2 className="font-serif text-5xl md:text-6xl text-chocolate font-light tracking-wide">
                             The Story of Us
                         </h2>
@@ -65,7 +71,7 @@ export default function OurStory() {
                 {/* ================= INDIVIDUAL PROFILES ================= */}
                 <div className="space-y-24 md:space-y-40 mb-32">
                     {stories.map((story, idx) => {
-                        const isGroom = idx === 0;
+                        const isGroom = idx === 1;
 
                         return (
                             <motion.div
@@ -103,9 +109,7 @@ export default function OurStory() {
 
                                             {/* Fallback Display State Container (Until your pictures are uploaded) */}
                                             <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-tr from-chocolate/10 to-gold/5">
-                                                <span className="text-4xl mb-3 opacity-80">{isGroom ? "🤵‍♂️" : "👰‍♀️"}</span>
-                                                <p className="text-chocolate font-serif font-medium text-sm">Photo Slot</p>
-                                                <p className="text-chocolate/50 text-xs mt-1">Add {story.name.split(' ')[0]}'s image here</p>
+
                                             </div>
                                         </div>
 
@@ -120,9 +124,9 @@ export default function OurStory() {
 
                                 {/* 2. Text Content Block */}
                                 <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
-                  <span className="text-gold tracking-widest text-xs uppercase font-semibold block">
-                    {story.role}
-                  </span>
+                                      <span className="text-gold tracking-widest text-xs uppercase font-semibold block">
+                                        {story.role}
+                                      </span>
                                     <h3 className="text-3xl md:text-4xl font-serif text-chocolate tracking-wide">
                                         {story.name}
                                     </h3>
@@ -130,9 +134,9 @@ export default function OurStory() {
 
                                     {/* Styled blockquote with huge stylistic quote marks */}
                                     <div className="relative pt-4">
-                    <span className="absolute top-0 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 font-serif text-6xl text-gold/10 leading-none select-none">
-                      “
-                    </span>
+                                        <span className="absolute top-0 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 font-serif text-6xl text-gold/10 leading-none select-none">
+                                          “
+                                        </span>
                                         <p className="text-chocolate/85 font-light leading-relaxed text-base md:text-lg pl-0 md:pl-6 text-justify md:text-left">
                                             {story.content}
                                         </p>

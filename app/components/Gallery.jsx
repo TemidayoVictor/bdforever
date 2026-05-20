@@ -5,12 +5,20 @@ import { useInView } from "react-intersection-observer";
 
 // Replace these with your actual image paths
 const images = [
-    { id: 1, src: "/gallery/1.jpg", category: "Engagement" },
-    { id: 2, src: "/gallery/2.jpg", category: "Pre-wedding" },
-    { id: 3, src: "/gallery/3.jpg", category: "Couple" },
-    { id: 4, src: "/gallery/4.jpg", category: "Traditional" },
-    { id: 5, src: "/gallery/5.jpg", category: "Love Story" },
-    { id: 6, src: "/gallery/6.jpg", category: "Moments" },
+    { id: 1, src: "/img1.jpg", category: "Pre-wedding" },
+    { id: 2, src: "/img2.jpg", category: "Pre-wedding" },
+    { id: 3, src: "/img3.jpg", category: "Pre-wedding" },
+    { id: 4, src: "/img4.jpg", category: "Pre-wedding" },
+    { id: 5, src: "/img5.jpg", category: "Pre-wedding" },
+    { id: 6, src: "/img6.jpg", category: "Pre-wedding" },
+    { id: 7, src: "/img7.jpg", category: "Pre-wedding" },
+    { id: 8, src: "/img8.jpg", category: "Pre-wedding" },
+    { id: 9, src: "/img9.jpg", category: "Pre-wedding" },
+    { id: 10, src: "/img10.jpg", category: "Pre-wedding" },
+    { id: 11, src: "/img11.jpg", category: "Pre-wedding" },
+    { id: 12, src: "/img12.jpg", category: "Pre-wedding" },
+    { id: 13, src: "/img13.jpg", category: "Pre-wedding" },
+    { id: 14, src: "/img14.jpg", category: "Pre-wedding" },
 ];
 
 export default function Gallery() {
@@ -49,9 +57,9 @@ export default function Gallery() {
                                 onClick={() => setSelectedImage(image)}
                             >
                                 {/*
-                  Dynamic height allocation using index variations
-                  This creates an editorial fashion lookbook effect without extra CSS plugins
-                */}
+                                  Dynamic height allocation using index variations
+                                  This creates an editorial fashion lookbook effect without extra CSS plugins
+                                */}
                                 <div className={`relative w-full ${
                                     idx % 3 === 0 ? "aspect-[3/4]" : idx % 3 === 1 ? "aspect-square" : "aspect-[4/5]"
                                 } bg-cream/40 flex items-center justify-center transition-transform duration-700 ease-out group-hover:scale-102`}>
@@ -70,8 +78,8 @@ export default function Gallery() {
                                                 {String(idx + 1).padStart(2, "0")}
                                             </div>
                                             <span className="text-[10px] uppercase tracking-[0.2em] text-chocolate/40 block font-medium">
-                        Captured Moment
-                      </span>
+                                                Captured Moment
+                                            </span>
                                         </div>
                                     )}
 
@@ -80,9 +88,9 @@ export default function Gallery() {
 
                                     {/* Luxury Minimalist Tint Overlay on Hover */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-chocolate/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 z-10">
-                    <span className="text-gold text-[10px] tracking-[0.25em] uppercase font-semibold transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                      {image.category || "Memory"}
-                    </span>
+                                        <span className="text-gold text-[10px] tracking-[0.25em] uppercase font-semibold transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                          {image.category || "Memory"}
+                                        </span>
                                         <h4 className="font-serif text-white text-lg mt-1 tracking-wide transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 delay-75">
                                             {image.title || "View Moment"}
                                         </h4>
@@ -113,9 +121,9 @@ export default function Gallery() {
                         {/* Top Bar Utilities */}
                         <div className="w-full max-w-5xl flex justify-between items-center text-white mb-4 px-2">
                             <div className="space-y-0.5">
-                <span className="text-gold text-[10px] tracking-widest uppercase font-semibold">
-                  {selectedImage.category || "Gallery"}
-                </span>
+                                <span className="text-gold text-[10px] tracking-widest uppercase font-semibold">
+                                  {selectedImage.category || "Gallery"}
+                                </span>
                                 <h3 className="font-serif text-lg tracking-wide text-white/90">
                                     {selectedImage.title || "Our Love Story"}
                                 </h3>

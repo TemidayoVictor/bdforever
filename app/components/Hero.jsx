@@ -54,15 +54,15 @@ export default function Hero() {
                 >
                     {/* Subtle Tagline */}
                     <span className="text-gold text-xs md:text-sm uppercase tracking-[0.35em] font-semibold block">
-            We Are Getting Married
-          </span>
+                        We Are Getting Married
+                    </span>
 
                     {/* Master Monogram Display */}
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-serif text-chocolate font-light leading-[1.1] tracking-wide">
                         Olubunmi
                         <span className="text-gold/40 block md:inline font-sans text-4xl sm:text-5xl md:text-6xl mx-4 my-2 md:my-0 font-light">
-              &
-            </span>
+                          &
+                        </span>
                         Temidayo
                     </h1>
 
@@ -95,8 +95,8 @@ export default function Hero() {
                                     {/* Subtle vertical separator dot between time elements */}
                                     {idx < Object.keys(timeLeft).length - 1 && (
                                         <span className="text-gold/20 text-xs font-light ml-2.5 sm:ml-8 self-center -translate-y-1 sm:-translate-y-2 select-none">
-                        •
-                    </span>
+                                            •
+                                        </span>
                                     )}
                                 </div>
                             ))}
@@ -115,11 +115,11 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
 
                             <span className="relative z-10 text-xs tracking-[0.2em] uppercase font-semibold text-gold group-hover:text-white transition-colors duration-300">
-                Request Guest Pass
-              </span>
+                                Request Guest Pass
+                          </span>
                             <span className="relative z-10 text-gold group-hover:text-white group-hover:translate-x-1 transition-all duration-300 text-xs">
-                →
-              </span>
+                                →
+                            </span>
 
                             {/* Hover Solid Reveal Background */}
                             <div className="absolute inset-0 bg-gold transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300 -z-0" />
@@ -130,9 +130,9 @@ export default function Hero() {
 
             {/* 6. Pure Minimalist Scroll-Down Cue */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-        <span className="text-[9px] uppercase tracking-[0.3em] text-chocolate/40 font-medium">
-          Scroll
-        </span>
+                <span className="text-[9px] uppercase tracking-[0.3em] text-chocolate/40 font-medium">
+                  Scroll
+                </span>
                 <div className="w-[1px] h-8 bg-gradient-to-b from-chocolate/30 to-transparent relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-1/2 bg-gold animate-bounce" />
                 </div>

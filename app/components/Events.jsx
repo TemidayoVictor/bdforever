@@ -108,9 +108,9 @@ export default function Events() {
 
                                 {/* Map Button Trigger */}
                                 <div className="mt-8 pt-4 border-t border-gold/10 flex items-center justify-between">
-                  <span className="text-xs text-chocolate/60 font-medium group-hover:text-gold transition-colors">
-                    Get Directions
-                  </span>
+                                    <span className="text-xs text-chocolate/60 font-medium group-hover:text-gold transition-colors">
+                                        Get Directions
+                                    </span>
                                     <div className="w-7 h-7 rounded-full bg-gold/10 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-all duration-300 text-xs">
                                         →
                                     </div>
@@ -153,9 +153,9 @@ export default function Events() {
                                     }`}
                                 >
                                     {/*
-            TIMELINE ELEGANT NODE
-            Replaced the double div with a crisp ring + pulse core setup
-          */}
+                                        TIMELINE ELEGANT NODE
+                                        Replaced the double div with a crisp ring + pulse core setup
+                                     */}
                                     <div
                                         className={`absolute top-2 left-0 w-3 h-3 rounded-full border border-gold bg-white -translate-x-1/2 z-10 md:left-auto transition-transform duration-300 group-hover:scale-125 ${
                                             isEven ? "md:-left-[6px]" : "md:-right-[6px]"
@@ -165,16 +165,16 @@ export default function Events() {
                                     </div>
 
                                     {/*
-            EVENT INTERIOR CONTAINER
-            Changed to editorial text-left alignment on both sides for premium readability
-          */}
+                                        EVENT INTERIOR CONTAINER
+                                        Changed to editorial text-left alignment on both sides for premium readability
+                                     */}
                                     <div className="w-full max-w-md text-left group">
                                         <div className="p-6 rounded-2xl bg-transparent hover:bg-cream/30 border border-transparent hover:border-gold/10 shadow-none hover:shadow-2xs transition-all duration-400 group">
 
                                             {/* Event Time Stamp */}
                                             <span className="block text-[10px] font-semibold tracking-[0.25em] text-gold uppercase mb-2 transition-transform duration-300 group-hover:translate-x-0.5">
-                {item.time}
-              </span>
+                                                {item.time}
+                                            </span>
 
                                             {/* Event Title */}
                                             <h4 className="text-lg font-serif text-chocolate font-light tracking-wide group-hover:text-gold transition-colors duration-300">
@@ -207,8 +207,8 @@ export default function Events() {
                     <div className="absolute inset-1 border border-gold/5 rounded-2xl pointer-events-none" />
 
                     <span className="text-gold tracking-[0.25em] text-xs uppercase font-semibold block mb-2">
-            Attire Inspiration
-          </span>
+                        Attire Inspiration
+                    </span>
                     <h3 className="font-serif text-2xl md:text-3xl text-chocolate mb-4">
                         Dress Code
                     </h3>
@@ -227,8 +227,8 @@ export default function Events() {
                             <div key={sIdx} className="flex flex-col items-center gap-2">
                                 <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md ${swatch.colorBg} flex items-center justify-center transition-transform hover:scale-110 duration-300`} />
                                 <span className="text-[11px] uppercase tracking-wider font-medium text-chocolate/70">
-                  {swatch.label}
-                </span>
+                                  {swatch.label}
+                                </span>
                             </div>
                         ))}
                     </div>

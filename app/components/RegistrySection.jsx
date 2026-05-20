@@ -58,8 +58,8 @@ export default function RegistrySection() {
                     <div className="absolute inset-2 border border-gold/5 rounded-2xl pointer-events-none" />
 
                     <span className="text-[10px] tracking-[0.25em] uppercase text-gold font-semibold block mb-6">
-            Direct Bank Transfer
-          </span>
+                        Direct Bank Transfer
+                    </span>
 
                     {/* Structured Detail Grid */}
                     <div className="space-y-5 text-left text-sm max-w-xs mx-auto mb-8">
@@ -76,8 +76,8 @@ export default function RegistrySection() {
                         <div className="flex flex-col gap-1 relative">
                             <span className="text-[10px] uppercase tracking-wider text-chocolate/40 font-medium">Account Number</span>
                             <span className="font-mono text-xl sm:text-2xl text-gold tracking-wider font-semibold mt-0.5 block">
-                {bankDetails.accountNumber}
-              </span>
+                                {bankDetails.accountNumber}
+                            </span>
                         </div>
                     </div>
 
@@ -100,8 +100,8 @@ export default function RegistrySection() {
                             </motion.span>
                         ) : (
                             <span className="flex items-center gap-2">
-                Copy Account Number
-              </span>
+                                Copy Account Number
+                            </span>
                         )}
                     </button>
 
