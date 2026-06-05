@@ -8,9 +8,9 @@ export default function RegistrySection() {
 
     // Replace these values with your actual banking specifications
     const bankDetails = {
-        accountNumber: "0123456789",
-        bankName: "Guaranty Trust Bank (GTBank)",
-        accountName: "Temidayo O. & Olubunmi A."
+        accountNumber: "8161244256",
+        bankName: "OPAY",
+        accountName: "Bunmi Folorunsho-Davies."
     };
 
     const handleCopy = async () => {
@@ -64,7 +64,7 @@ export default function RegistrySection() {
                     {/* Structured Detail Grid */}
                     <div className="space-y-5 text-left text-sm max-w-xs mx-auto mb-8">
                         <div className="flex flex-col gap-1 pb-3 border-b border-gold/10">
-                            <span className="text-[10px] uppercase tracking-wider text-chocolate/40 font-medium">Bank Institution</span>
+                            <span className="text-[10px] uppercase tracking-wider text-chocolate/40 font-medium">Bank</span>
                             <span className="font-serif text-base text-chocolate font-medium">{bankDetails.bankName}</span>
                         </div>
 

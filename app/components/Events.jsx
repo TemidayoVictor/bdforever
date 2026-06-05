@@ -33,10 +33,21 @@ const timeline = [
     { time: "7:00 AM", event: "Traditional Ceremony Begins" },
     { time: "9:00 AM", event: "Traditional Ceremony Ends" },
     { time: "10:00 AM", event: "Church Service" },
-    { time: "12:00 PM", event: "Reception Starts" },
-    { time: "1:00 PM", event: "Couple's Entrance" },
-    { time: "2:00 PM", event: "Cutting of Cake" },
-    { time: "4:00 PM", event: "After Party" },
+    { time: "12:00 PM", event: "Arrival of Guests" },
+    { time: "1:10 PM", event: "Invitation to the high table & Introduction of the Chairman" },
+    { time: "1:15 PM", event: "Grand Entry of Brides Parent" },
+    { time: "1:20 PM", event: "Grand Entry of Grooms Parent" },
+    { time: "1:25 PM", event: "Triumphant Entry of the Couple (games)" },
+    { time: "1:50 PM", event: "Opening Prayer (Grand Entry Of our Maker)" },
+    { time: "2:00 PM", event: "Chairman's remark" },
+    { time: "2:10 PM", event: "Cutting of the Cake" },
+    { time: "2:20 PM", event: "1st kiss and 1st Dance" },
+    { time: "2:35 PM", event: "Bride Dance with the father" },
+    { time: "2:40 PM", event: "Groom dance with the mother" },
+    { time: "2:45 PM", event: "Couples with family and friends" },
+    { time: "3:00 PM", event: " 'On behalf of my wife and I' " },
+    { time: "3:05 PM", event: "Closing Prayer" },
+    { time: "", event: "Dance  Dance  Dance!!!" },
 ];
 
 export default function Events() {
@@ -222,7 +233,6 @@ export default function Events() {
                             { label: "Green", colorBg: "bg-emerald-800 text-white" },
                             { label: "White", colorBg: "bg-white border border-gold/20 text-chocolate" },
                             { label: "Gold", colorBg: "bg-amber-500 text-white" },
-                            { label: "Chocolate", colorBg: "bg-amber-950 text-white" }
                         ].map((swatch, sIdx) => (
                             <div key={sIdx} className="flex flex-col items-center gap-2">
                                 <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md ${swatch.colorBg} flex items-center justify-center transition-transform hover:scale-110 duration-300`} />

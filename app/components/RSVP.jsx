@@ -122,7 +122,7 @@ export default function Rsvp() {
                             </h3>
 
                             <p className="text-chocolate/80 text-sm md:text-base leading-relaxed">
-                                To guarantee an intimate and beautifully organized celebration, entry to the venue will require a physical or digital <strong>Pass Card</strong>. No entry will be permitted without verification.
+                                To guarantee an intimate and beautifully organized celebration, entry to the venue will require a physical <strong>Pass Card</strong>. No entry will be permitted without verification.
                             </p>
 
                             {/* Step-by-Step Instructions */}
@@ -148,7 +148,7 @@ export default function Rsvp() {
                                         3
                                     </div>
                                     <p className="text-chocolate/70 text-sm">
-                                        Your customized Pass Card will be issued to you instantly upon verification.
+                                        Your customized Pass Card will be issued to you upon verification.
                                     </p>
                                 </div>
                             </div>

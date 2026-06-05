@@ -18,9 +18,9 @@ export default function Footer() {
                         className="mb-8 group"
                     >
                         <div className="text-4xl font-serif mb-3 tracking-wide">
-                            <span className="text-gold font-light">T</span>
-                            <span className="text-gold/40 mx-2 text-2xl font-sans">&</span>
                             <span className="text-gold font-light">O</span>
+                            <span className="text-gold/40 mx-2 text-2xl font-sans">&</span>
+                            <span className="text-gold font-light">T</span>
                         </div>
 
                         {/* Wedding Hashtag */}
@@ -52,7 +52,7 @@ export default function Footer() {
 
                     {/* Copyright Information */}
                     <p className="text-xs tracking-wider opacity-50 uppercase font-medium">
-                        © {currentYear} Temidayo & Olubunmi — June 13, 2026
+                        © {currentYear} Olubunmi & Temidayo — June 13, 2026
                     </p>
 
                     <p className="text-[10px] tracking-widest opacity-30 uppercase font-mono mt-3">

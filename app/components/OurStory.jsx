@@ -6,23 +6,27 @@ const stories = [
     {
         name: "Olubunmi Helen",
         role: "Bride",
-        content:
-            "Temidayo has always been my safe place, my home. \n" +
-            "\n" +
-            "From the very first conversation, I remember being introduced to him when I wanted to join his unit in church. He smiled at me and welcomed me with so much warmth. I just knew he was different—there was something about him. \n" +
-            "\n" +
-            "He’s a kind, intentional man, deeply devoted to God. He challenges me to grow, loves me unconditionally, and makes every day feel like a gift. He always told me, “Bunmi, you can do it. Everything will be fine. Don’t worry. God loves you. You’re special.” So many words that never made me doubt his commitment to me. \n" +
-            "\n" +
-            "I honestly can’t wait to be his wife. I look forward to the beautiful journey ahead with him.",
+        content: [
+            "Temidayo has always been someone I deeply admire and respect.",
+            "I met him in church while I was still in school, and from our very first conversation, I knew he was different. He welcomed me with so much warmth and kindness, and there was something about him that stood out immediately.",
+            "He is kind, intentional, and a committed leader who genuinely cares about people. Looking back now, something in me always wanted to support him, and I believe that was a sign of what God had in store for us.",
+            "He challenges me to grow, loves me unconditionally, and makes every day feel like a gift. Through every season, he has been a source of encouragement, strength, and joy.",
+            "What started as Bro Dayo became Dy, and now babe. I honestly cannot wait to be his wife and build a life together. Our confidence for this beautiful journey ahead is God, and I am grateful for all that He has written into our story."
+        ],
         image: "/img16.jpeg",
         delay: 0.2,
     },
     {
         name: "Temidayo Victor",
         role: "Groom",
-        content:
-            "I first saw Bunmi at a church event, and something about her grace stood out. We became friends, then prayer partners, and somewhere along the line, I knew she was the one God had prepared for me. Her faith, her strength, and her beautiful smile captured my heart completely.",
-        image: "/img17.jpeg",
+        content:[
+            "Olubunmi is nothing short of a rare and priceless gem.",
+            "We began this journey when we were both quite young, and looking back today, choosing her is one of the best decisions I have ever made.",
+            "One of her most remarkable qualities is her loyalty. She loves deeply, stands firmly by the people she cares about, and is always willing to go above and beyond for them",
+            "From the very beginning, she has been my supporter, my muse, my cheerleader, and my best friend.",
+            "I thank God every day for the gift of Olubunmi. She has brought so much joy, and beauty into my life, and I look forward to spending forever with her."
+        ],
+        image: "/groom.jpeg",
         delay: 0,
     },
 ];
@@ -137,9 +141,11 @@ export default function OurStory() {
                                         <span className="absolute top-0 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 font-serif text-6xl text-gold/10 leading-none select-none">
                                           “
                                         </span>
-                                        <p className="text-chocolate/85 font-light leading-relaxed text-base md:text-lg pl-0 md:pl-6 text-justify md:text-left">
-                                            {story.content}
-                                        </p>
+                                        <div className="space-y-4">
+                                            {story.content.map((paragraph, index) => (
+                                                <p key={index}>{paragraph}</p>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
 

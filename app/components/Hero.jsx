@@ -30,6 +30,13 @@ export default function Hero() {
             id="home"
             className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background px-6"
         >
+            {/*<div*/}
+            {/*    className="absolute inset-0 bg-cover bg-top bg-no-repeat opacity-20"*/}
+            {/*    style={{ backgroundImage: "url('/img1.jpg')" }}*/}
+            {/*/>*/}
+
+            {/*/!* Subtle gradient overlay to ensure text stays readable *!/*/}
+            {/*<div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/30 z-0" />*/}
             {/* 1. Fine-Line Outer Frame — Mimics Luxury Cardstock Invitations */}
             <div className="absolute inset-4 md:inset-6 border border-gold/20 rounded-2xl pointer-events-none z-20">
                 {/* Subtle Ornamental Corners */}

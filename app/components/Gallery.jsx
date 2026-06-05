@@ -6,19 +6,16 @@ import { useInView } from "react-intersection-observer";
 // Replace these with your actual image paths
 const images = [
     { id: 1, src: "/img1.jpg", category: "Pre-wedding" },
-    { id: 2, src: "/img2.jpg", category: "Pre-wedding" },
     { id: 3, src: "/img3.jpg", category: "Pre-wedding" },
     { id: 4, src: "/img4.jpg", category: "Pre-wedding" },
-    { id: 5, src: "/img5.jpg", category: "Pre-wedding" },
+
     { id: 6, src: "/img6.jpg", category: "Pre-wedding" },
-    { id: 7, src: "/img7.jpg", category: "Pre-wedding" },
     { id: 8, src: "/img8.jpg", category: "Pre-wedding" },
-    { id: 9, src: "/img9.jpg", category: "Pre-wedding" },
     { id: 10, src: "/img10.jpg", category: "Pre-wedding" },
+
     { id: 11, src: "/img11.jpg", category: "Pre-wedding" },
     { id: 12, src: "/img12.jpg", category: "Pre-wedding" },
     { id: 13, src: "/img13.jpg", category: "Pre-wedding" },
-    { id: 14, src: "/img14.jpg", category: "Pre-wedding" },
 ];
 
 export default function Gallery() {

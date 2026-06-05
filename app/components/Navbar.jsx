@@ -63,14 +63,14 @@ export default function Navbar() {
                     >
                         {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
                         <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
-                          T
+                          O
                         </span>
                         <span className="font-sans text-[11px] uppercase tracking-widest text-gold/60 font-light mt-1">
                           ×
                         </span>
                         {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
                         <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
-                          O
+                          T
                         </span>
                     </div>
 
