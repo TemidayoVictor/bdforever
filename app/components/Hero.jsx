@@ -61,7 +61,7 @@ export default function Hero() {
                 >
                     {/* Subtle Tagline */}
                     <span className="text-gold text-xs md:text-sm uppercase tracking-[0.35em] font-semibold block">
-                        We Are Getting Married
+                        We Are Getting Married !
                     </span>
 
                     {/* Master Monogram Display */}
