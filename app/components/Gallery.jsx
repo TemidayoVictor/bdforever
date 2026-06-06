@@ -30,7 +30,7 @@ export default function Gallery() {
                     {/* ================= SECTION HEADER ================= */}
                     <div className="text-center mb-20">
                         <p className="text-gold tracking-[0.3em] text-xs uppercase font-semibold block mb-3">
-                            Memories
+                            To Forever
                         </p>
                         <h2 className="font-serif text-4xl md:text-5xl text-chocolate font-light tracking-wide">
                             Our Gallery

@@ -62,16 +62,9 @@ export default function Navbar() {
                         className="flex items-center gap-1.5 cursor-pointer group select-none"
                     >
                         {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
-                        <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
-                          O
-                        </span>
-                        <span className="font-sans text-[11px] uppercase tracking-widest text-gold/60 font-light mt-1">
-                          ×
-                        </span>
-                        {/* Removed mobileMenuOpen color switch -> Stays text-chocolate */}
-                        <span className="font-serif text-2xl font-light tracking-tighter text-chocolate group-hover:text-gold transition-colors duration-300">
-                          T
-                        </span>
+                        <p className="text-gold/80 text-xs tracking-[0.25em] uppercase font-medium bg-white/5 px-4 py-1.5 rounded-full backdrop-blur-xs inline-block">
+                            #BDForever2026
+                        </p>
                     </div>
 
                     {/* DESKTOP NAV ITEMS */}

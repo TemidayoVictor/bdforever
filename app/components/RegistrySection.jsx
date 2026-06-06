@@ -36,14 +36,14 @@ export default function RegistrySection() {
                         Love & Blessings
                     </p>
                     <h2 className="font-serif text-3xl md:text-4xl text-chocolate font-light tracking-wide">
-                        Registry & Wishing Well
+                        Celebrate With Us
                     </h2>
                     <div className="w-12 h-[1px] bg-gold/30 mx-auto my-4" />
                 </div>
 
                 {/* ================= THE GRACEFUL NOTE ================= */}
                 <p className="font-serif italic text-chocolate/80 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-12">
-                    "Your presence at our celebration is the greatest gift of all. However, should you wish to honor our new beginning with a contribution, a monetary gift to our wishing well would be warmly appreciated."
+                   "Your presence is the greatest gift. If you wish to honour us further, a monetary contribution would be appreciated."
                 </p>
 
                 {/* ================= EDITORIAL BANK CARD CONTAINER ================= */}

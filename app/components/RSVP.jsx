@@ -35,8 +35,8 @@ export default function Rsvp() {
                     </h2>
                     <div className="w-20 h-[2px] bg-gold mx-auto mt-4" />
                     <p className="text-chocolate/70 mt-6 max-w-md mx-auto leading-relaxed">
-                        Please secure your access confirmation by{" "}
-                        <span className="font-semibold text-chocolate">June 1st, 2026</span>
+                        Please confirm your attendance
+                        {/*<span className="font-semibold text-chocolate">June 1st, 2026</span>*/}
                     </p>
                 </div>
 
@@ -148,7 +148,7 @@ export default function Rsvp() {
                                         3
                                     </div>
                                     <p className="text-chocolate/70 text-sm">
-                                        Your customized Pass Card will be issued to you upon verification.
+                                        Your pass card will be issued to you upon verification.
                                     </p>
                                 </div>
                             </div>
